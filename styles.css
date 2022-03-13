@@ -1,12 +1,10 @@
-body {
-  /* font-family: CitiSans; */
-}
 
-h1 {
-  color: red;
-}
 
-/* 30, 24, 18 */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: Verdana;
+}
 
 #citizens-bank-logo {
   width: 30%;
@@ -14,10 +12,14 @@ h1 {
   margin-left: 50px;
 }
 
-#second-image {
+#banner1 {
   width: 102%;
   margin-left: -10px;
   margin-top: -40px;
+}
+
+#banner2 {
+  display: none;
 }
 
 #section2 .section2-text {
@@ -108,14 +110,18 @@ p {
 
 .row1-border {
   border-right: 1px solid #888888;
-  height: 190px;
+  height: 225px;
   margin-top: 65px;
 }
 
 .row2-border {
   border-right: 1px solid #888888;
-  height: 140px;
+  height: 180px;
   margin-top: 65px;
+}
+
+#section3 .nobottom {
+  border-bottom: none;
 }
 
 .row {
@@ -145,9 +151,9 @@ p {
   text-align: center;
 }
 
-
 .quote1 {
-  width: 85%;
+  width: 100%;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   font-size: 18px;
@@ -172,7 +178,7 @@ p {
 
 .text1 {
   color: #888888;
-  line-height: 1.75;
+  line-height: 1.93;
   font-size: 18px;
   text-align: center;
 }
@@ -185,7 +191,7 @@ p {
 .text3 {
   text-align: center;
   color: #888888;
-  line-height: 1.75;
+  line-height: 1.64;
   font-size: 18px;
 }
 
@@ -199,7 +205,6 @@ p {
 .footertext {
   color: #888888;
   font-size: 14px;
-  color: #000000;
 }
 
 .background {
@@ -218,27 +223,144 @@ p {
   position: relative;
 }
 
+.link {
+  color: #749B29
+}
 
-@media only screen and (max-width: 600px) {
-  h1 {
-    color: blue;
-  }
 
-  body {
-    background-color: lightblue;
-  }
-
-  p{
-    color: red !important;
-  }
+@media only screen and (max-width: 800px) {
 
   #citizens-bank-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 15px;
+    width: 50%;
+    margin-bottom: -15px;
+  }
+
+  #banner1{
+    display: none;
+  }
+
+  #banner2 {
+    display: block;
+    width: 100%;
   }
 
   .title {
-    background-color: red !important;
+     font-size: 40px;
   }
+
+  .section2-text {
+    font-size: 25px !important;
+  }
+
+  #section3 > .title {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .row1-border,
+  .row2-border {
+    display: none;
+  }
+
+  .column1,
+  .column2 {
+    width: 82%;
+    border-bottom: 1px solid var(--text-color)
+  }
+
+  .section3-title {
+    font-size: 35px;
+    margin-top: 0px;
+  }
+
+  .section3-text {
+    font-size: 25px;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .link {
+    font-size: 25px;
+  }
+
+  .container {
+    padding: 0px 25px
+  }
+
+  .item > img {
+    width: 75%;
+  }
+
+  .row .item {
+    width: 82%;
+    padding: 50px;
+  }
+
+  .text1,
+  .quote1,
+  .section4-text,
+  .text2,
+  .quote2,
+  .text3,
+  .quote3
+  {
+    font-size: 25px;
+  }
+
+  .quote1 {
+    width: 95%;
+    text-align: center;
+  }
+
+  .quote2 {
+    width: 85%;
+    text-align: center;
+  }
+
+  .quote3 {
+    text-align: center;
+    width: 101%;
+  }
+
+  .section4-title {
+    font-size: 35px;
+    padding: 20px;
+  }
+
+  .text2 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button {
+    font-size: 30px;
+    padding: 20px 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .text-container {
+    width: 70%;
+  }
+
+  .item2-text-conatiner .background {
+    left: 120px;
+  }
+
+  #footer p {
+    font-size: 25px;
+  }
+
+  #footer img {
+    width: 45%;
+  }
+
 }
