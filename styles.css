@@ -1,0 +1,244 @@
+body {
+  /* font-family: CitiSans; */
+}
+
+h1 {
+  color: red;
+}
+
+/* 30, 24, 18 */
+
+#citizens-bank-logo {
+  width: 30%;
+  margin-top: -50px;
+  margin-left: 50px;
+}
+
+#second-image {
+  width: 102%;
+  margin-left: -10px;
+  margin-top: -40px;
+}
+
+#section2 .section2-text {
+  color: #888888;
+  margin: 0px 50px;
+  line-height: 2;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+#footer {
+  border-top: 1px solid #419460;
+  padding: 50px;
+}
+
+#footer p {
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+button {
+  background-color: #E97437;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 35px;
+}
+
+.item {
+
+}
+
+p {
+  line-height: 1.5;
+}
+
+.container {
+  padding: 0px 50px;
+}
+
+.section3-text {
+  color: #888888;
+  line-height: 2;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.section4-text {
+  color: #888888;
+  margin-top: 0px !important;
+  line-height: 2;
+  font-size: 18px;
+  margin-top: 15px;
+  padding: 30px;
+  background-color: #EBF7F5;
+}
+
+.section4-title {
+  background-color: #419460;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px 0px;
+  margin-bottom: 0px;
+}
+
+.column1, .column2 {
+  width: 100%;
+  padding: 30px 50px;
+}
+
+.title {
+  color: #419460;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.section3-title {
+  color: #419460;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.row1-border {
+  border-right: 1px solid #888888;
+  height: 190px;
+  margin-top: 65px;
+}
+
+.row2-border {
+  border-right: 1px solid #888888;
+  height: 140px;
+  margin-top: 65px;
+}
+
+.row {
+  display: flex;
+}
+
+.row .item {
+  width: 100%;
+  padding: 50px;
+}
+
+.item > img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-container {
+  position: relative;
+  width: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-container .text1 {
+  text-align: center;
+}
+
+
+.quote1 {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  color: #419460;
+}
+
+.quote2 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  color: #419460;
+}
+
+.quote3 {
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  color: #419460;
+}
+
+.text1 {
+  color: #888888;
+  line-height: 1.75;
+  font-size: 18px;
+  text-align: center;
+}
+.text2 {
+  color: #888888;
+  line-height: 1.5;
+  font-size: 18px;
+  text-align: center;
+}
+.text3 {
+  text-align: center;
+  color: #888888;
+  line-height: 1.75;
+  font-size: 18px;
+}
+
+.green-border {
+  border: 1px solid #429661;
+  width: 75px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footertext {
+  color: #888888;
+  font-size: 14px;
+  color: #000000;
+}
+
+.background {
+  font-size: 200px;
+  opacity: 0.05;
+  position: absolute;
+  top: -40px;
+  left: -6px;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.item2-text-conatiner {
+  position: relative;
+}
+
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    color: blue;
+  }
+
+  body {
+    background-color: lightblue;
+  }
+
+  p{
+    color: red !important;
+  }
+
+  #citizens-bank-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title {
+    background-color: red !important;
+  }
+}
