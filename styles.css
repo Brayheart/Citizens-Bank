@@ -161,7 +161,8 @@ p {
 }
 
 .quote2 {
-  width: 50%;
+  text-align: center;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
   font-size: 18px;
@@ -169,7 +170,8 @@ p {
 }
 
 .quote3 {
-  width: 86%;
+  text-align: center;
+  width: 110%;
   margin-left: auto;
   margin-right: auto;
   font-size: 18px;
