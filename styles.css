@@ -1,10 +1,33 @@
+/* Global Variables */
 
+:root {
+  --main-gray: #888888;
+  --primary-green: #419460
+}
 
 html, body {
     max-width: 100%;
     overflow-x: hidden;
     font-family: Verdana;
 }
+
+button {
+  background-color: #E97437;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 35px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* Ids */
 
 #citizens-bank-logo {
   width: 30%;
@@ -23,7 +46,7 @@ html, body {
 }
 
 #section2 .section2-text {
-  color: #888888;
+  color: var(--main-gray);
   margin: 0px 50px;
   line-height: 2;
   font-size: 18px;
@@ -31,7 +54,7 @@ html, body {
 }
 
 #footer {
-  border-top: 1px solid #419460;
+  border-top: 1px solid var(--primary-green);
   padding: 50px;
 }
 
@@ -40,39 +63,25 @@ html, body {
   margin-bottom: 0px;
 }
 
-button {
-  background-color: #E97437;
-  color: white;
-  border: none;
-  font-size: 20px;
-  padding: 10px 15px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-top: 35px;
+#section3 .nobottom {
+  border-bottom: none;
 }
 
-.item {
-
-}
-
-p {
-  line-height: 1.5;
-}
+/* Classes */
 
 .container {
   padding: 0px 50px;
 }
 
 .section3-text {
-  color: #888888;
+  color: var(--main-gray);
   line-height: 2;
   font-size: 18px;
   margin-top: 15px;
 }
 
 .section4-text {
-  color: #888888;
+  color: var(--main-gray);
   margin-top: 0px !important;
   line-height: 2;
   font-size: 18px;
@@ -82,7 +91,7 @@ p {
 }
 
 .section4-title {
-  background-color: #419460;
+  background-color: var(--primary-green);
   color: white;
   text-align: center;
   font-size: 30px;
@@ -96,32 +105,28 @@ p {
 }
 
 .title {
-  color: #419460;
+  color: var(--primary-green);
   text-align: center;
   margin-bottom: 15px;
   font-size: 30px;
 }
 
 .section3-title {
-  color: #419460;
+  color: var(--primary-green);
   font-size: 25px;
   margin-bottom: 10px;
 }
 
 .row1-border {
-  border-right: 1px solid #888888;
+  border-right: 1px solid var(--main-gray);
   height: 225px;
   margin-top: 65px;
 }
 
 .row2-border {
-  border-right: 1px solid #888888;
+  border-right: 1px solid var(--main-gray);
   height: 180px;
   margin-top: 65px;
-}
-
-#section3 .nobottom {
-  border-bottom: none;
 }
 
 .row {
@@ -157,7 +162,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   font-size: 18px;
-  color: #419460;
+  color:  var(--primary-green);
 }
 
 .quote2 {
@@ -166,7 +171,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   font-size: 18px;
-  color: #419460;
+  color:  var(--primary-green);
 }
 
 .quote3 {
@@ -175,24 +180,24 @@ p {
   margin-left: auto;
   margin-right: auto;
   font-size: 18px;
-  color: #419460;
+  color:  var(--primary-green);
 }
 
 .text1 {
-  color: #888888;
+  color: var(--main-gray);
   line-height: 1.93;
   font-size: 18px;
   text-align: center;
 }
 .text2 {
-  color: #888888;
+  color: var(--main-gray);
   line-height: 1.5;
   font-size: 18px;
   text-align: center;
 }
 .text3 {
   text-align: center;
-  color: #888888;
+  color: var(--main-gray);
   line-height: 1.64;
   font-size: 18px;
 }
@@ -205,7 +210,7 @@ p {
 }
 
 .footertext {
-  color: #888888;
+  color: var(--main-gray);
   font-size: 14px;
 }
 
@@ -229,8 +234,16 @@ p {
   color: #749B29
 }
 
+/* Mobile */
 
 @media only screen and (max-width: 800px) {
+
+  button {
+    font-size: 30px;
+    padding: 20px 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 
   #citizens-bank-logo {
     display: block;
@@ -250,18 +263,26 @@ p {
     width: 100%;
   }
 
+  #section3 > .title {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #footer p {
+    font-size: 25px;
+  }
+
+  #footer img {
+    width: 45%;
+  }
+
   .title {
      font-size: 40px;
   }
 
   .section2-text {
     font-size: 25px !important;
-  }
-
-  #section3 > .title {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .row1-border,
@@ -342,27 +363,12 @@ p {
     margin-right: auto;
   }
 
-  button {
-    font-size: 30px;
-    padding: 20px 25px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
   .text-container {
     width: 70%;
   }
 
   .item2-text-conatiner .background {
     left: 120px;
-  }
-
-  #footer p {
-    font-size: 25px;
-  }
-
-  #footer img {
-    width: 45%;
   }
 
 }
