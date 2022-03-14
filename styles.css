@@ -359,6 +359,10 @@ p {
     font-size: 18px;
   }
 
+  .text3 {
+    line-height: 1.93;
+  }
+
   .quote1 {
     width: 95%;
     text-align: center;
