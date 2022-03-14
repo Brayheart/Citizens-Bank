@@ -310,7 +310,6 @@ p {
 
   .column1,
   .column2 {
-    /* width: 82% */
     padding: 0px;
     border-bottom: 1px solid var(--main-gray)
   }
@@ -319,6 +318,7 @@ p {
     font-size: 25px;
     margin-top: 30px;
     padding-left: 20px;
+    padding-right: 20px;
   }
 
   .section3-text {
@@ -345,7 +345,6 @@ p {
   }
 
   .row .item {
-    /* width: 82%; */
     padding: 0px;
   }
 
